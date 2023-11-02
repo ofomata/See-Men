@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>See Men</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/04f49d956a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Wrapper-->
+    <div class="wrapper">
+        <!--Header Section-->
+        <header>
+            <a href="index.html" class="logo"><img src="images/logo_transparent.png" alt="Logo"></a>
+
+            <!--Nav Section-->
+            <nav>
+                <a href="#"><i class="fa-solid fa-xmark close"></i></a>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            
+            <div class="nav-icon">
+                <a href="#"><i class="fa-solid fa-bars menu"></i></a>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </header>
+
+        <!--Hero Banner-->
+
+        <div class="hero-banner">
+            <h2>About Us</h2>
+        </div>
+        <div class="container">
+            <div class="about-us">
+                <p>
+                Welcome to "See Men," your go-to online destination for men's fashion. 
+                We are dedicated to providing you with high-quality clothing and 
+                accessories that enhance your personal style and empower you to make a 
+                statement. At "See Men," we pride ourselves on the following 
+                qualities that set us apart:
+                </p>
+            </div>
+        </div>
+        <div class="about-page-banner">
+            <div class="image-banner">
+                <img src="images/about craft.jpg" alt="">
+            </div>
+            <div class="container qualities">
+                <h2>Quality Craftsmanship</h2>
+                <p>
+                    We believe in quality over quantity. Our curated collection features 
+                    meticulously crafted clothing and accessories, ensuring that every 
+                    item you purchase from us is made to last. We pay close attention 
+                    to detail, so you can look and feel your best in our products.
+                </p>
+            </div>
+        </div>
+        <div class="about-page-banner">
+            <div class="image-banner">
+                <img src="images/male mode (1).jpg" alt="">
+            </div>
+            <div class="container qualities left">
+                <h2>Trendsetting Fashion</h2>
+                <p>
+                    Stay ahead of the fashion curve with our ever-evolving selection of 
+                    the latest trends. Whether you're looking for classic essentials or 
+                    cutting-edge styles, "See Men" offers a diverse range of fashion 
+                    options to suit your unique taste.
+                </p>
+            </div>
+        </div>
+        <div class="about-page-banner">
+            <div class="image-banner">
+                <img src="images/about access.jpg" alt="">
+            </div>
+            <div class="container qualities">
+                <h2>Affordable Luxury</h2>
+                <p>
+                    At "See Men," we believe that style shouldn't come at an exorbitant 
+                    price. We offer affordable luxury by providing you with top-tier 
+                    fashion choices that won't break the bank. Experience the joy of 
+                    owning premium products without the premium price tag.
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="about-us">
+                <h2>Elevate Your Style!</h2>
+                <p>
+                    At "See Men," we're not just an online store; we're a community of 
+                    like-minded individuals who share a passion for men's fashion. We 
+                    believe that your unique style is a powerful form of self-expression, 
+                    and we invite you to become a part of our growing community.
+                    <br>
+                    Thank you for choosing "See Men" for your fashion needs. We look 
+                    forward to having you as a valued member of our community and sharing 
+                    this exciting journey of style and self-expression together.
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer-end">
+                <div class="social">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                </div>
+                <div class="copyright">
+                    <p>Copyright © 2023 · All Rights Reserved</p>
+                    <small>Built by Ofomata Miracle</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<script>
+
+    const menu = document.querySelector('.menu')
+    const close = document.querySelector('.close')
+    const nav = document.querySelector('nav')
+
+    menu.addEventListener('click', () => {
+        nav.classList.add('open-nav')
+    })
+
+    close.addEventListener('click', () => {
+        nav.classList.remove('open-nav')
+    })
+
+
+
+</script>
+</body>
+</html>

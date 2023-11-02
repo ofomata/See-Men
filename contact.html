@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>See Men</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/04f49d956a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Wrapper-->
+    <div class="wrapper">
+        <!--Header Section-->
+        <header>
+            <a href="index.html" class="logo"><img src="images/logo_transparent.png" alt="Logo"></a>
+
+            <!--Nav Section-->
+            <nav>
+                <a href="#"><i class="fa-solid fa-xmark close"></i></a>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            
+            <div class="nav-icon">
+                <a href="#"><i class="fa-solid fa-bars menu"></i></a>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </header>
+        <div class="hr"></div>
+        <div class="container">
+            <!--Contact Section-->
+            <div class="contact-page">
+                <h2>Contact</h2>
+                <p>
+                    We're delighted to hear from you! Whether you have questions, 
+                    feedback, or just want to say hello, our contact page is the 
+                    gateway to connecting with us. Your input is important to us, 
+                    and we're here to assist in any way we can. Feel free to reach 
+                    out, and our dedicated team will respond promptly to assist you. 
+                    Thank you for considering us, and we look forward to being in 
+                    touch.
+                </p>
+            </div>
+            <div class="contact-form">
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" placeholder="required" required>
+                    <br>
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="required" required>
+                    <br>
+                    <label for="textarea">Message</label>
+                    <textarea name="message" rows="10"></textarea>
+                    <br>
+                    <a href="#"><button type="submit" value="submit">Contact Us</button></a>
+                </form>
+            </div>
+            <div class="footer-end">
+                <div class="social">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                </div>
+                <div class="copyright">
+                    <p>Copyright © 2023 · All Rights Reserved</p>
+                    <small>Built by Ofomata Miracle</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<script>
+
+    const menu = document.querySelector('.menu')
+    const close = document.querySelector('.close')
+    const nav = document.querySelector('nav')
+
+    menu.addEventListener('click', () => {
+        nav.classList.add('open-nav')
+    })
+
+    close.addEventListener('click', () => {
+        nav.classList.remove('open-nav')
+    })
+
+
+
+</script>
+</body>
+</html>

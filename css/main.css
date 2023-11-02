@@ -1,0 +1,850 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+.hero-img{
+    position: absolute;
+    top: 0;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/background.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: 100%;
+    background-size: cover;
+    z-index: -1;
+}
+/*.wrapper{
+    margin: 1.5em;
+}*/
+header{
+    background: #DDD0C8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+.logo img{
+    width: 6em;
+}
+nav{
+    display: block;
+    width: 50%;
+    height: 100vh;
+    background: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    text-transform: uppercase;
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+}
+nav ul{
+    list-style: none;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 1em;
+}
+nav ul li a:hover{
+    background: #DDD0C8;
+}
+.nav-icon{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.fa-cart-shopping{
+    font-size: 1.5rem;
+    color: black;
+}
+.close{
+    font-size: 1.5rem;
+    margin: .5em;
+    color: black;
+}
+.menu{
+    font-size: 1.5rem;
+    color: black;
+}
+.container{
+    margin: 1em 1.5em;
+}
+.hero-section{
+    color: white;
+    transform: translateY(15%);
+}
+.hero-section h1{
+    font-size: 3rem;
+}
+.subhead{
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+}
+.cta-btn{
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+.cta-btn a{
+    color: black;
+    text-decoration: none;
+    font-size: .8rem;
+    background: #DDD0C8;
+    padding: 1em;
+    border-radius: .5em;
+}
+.featured{
+    margin-top: 14em;
+}
+.desc{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    margin-bottom: 1em;
+}
+.desc h3{
+    font-weight: normal;
+    font-size: 1rem;
+}
+.desc a{
+    text-decoration: none;
+    color: black;
+}
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.slide {
+    flex: 0 0 100%;
+    text-align: center;
+}
+.slider img {
+    width: 100%;
+    height: auto;
+}
+button {
+    padding: .8em 1.2em;
+    background: #FFFFFF;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+}
+button:hover{
+    background: #333;
+    color: #FFFFFF;
+}
+#prevBtn {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+#nextBtn {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+.slide p{
+    font-size: .9rem;
+}
+
+.banner{
+    margin: 2.5em 0;
+    background: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(/images/glasses.jpg);
+    max-width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+.banner-detail{
+    text-align: center;
+    transform: translateY(20%);
+}
+.banner h2{
+    color: #DDD0C8;
+    font-weight: normal;
+    font-size: 3rem;
+}
+.banner p{
+    color: #DDD0C8;
+    font-size: 1.2rem;
+}
+.glass-btn {
+    text-decoration: none;
+    color: #DDD0C8;
+}
+.glass-btn:hover{
+    color: black;
+}
+.glass-btn{
+    background: transparent;
+    border: 2px solid #DDD0C8;
+    margin-top: 1em;
+}
+.glass-btn:hover{
+    background: #DDD0C8;
+    transition: 800ms;
+}
+
+.first-collection-detail{
+    text-align: center;
+}
+.first-collection-detail img{
+    width: 6em;
+}
+.first-collection-detail h2{
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+.first-collection-detail p{
+    font-size: .9rem;
+}
+.card1{
+    background: url(/images/watch\ on\ man.jpg);
+    width: 100%;
+    height: 25em;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+.card2{
+    background: url(/images/bracelet.jpg);
+    width: 100%;
+    height: 25em;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+.card3{
+    background: url(/images/ring.jpg);
+    width: 100%;
+    height: 25em;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+.card h2{
+    color: #DDD0C8;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.card-desc{
+    text-align: center;
+    transform: translateY(100%);
+}
+.card{
+    margin-top: 3em;
+}
+
+.top-seller{
+    margin: 4em 0;
+}
+.top-seller-detail{
+    text-align: center;
+}
+.top-seller-detail p{
+    font-size: .9em;
+    margin-bottom: 1em;
+}
+.top-seller-detail h2{
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+.top-image-action{
+    background: #DDD0C8;
+    text-align: center;
+    padding: .8em 0;
+}
+.top-image-action h5{
+    font-weight: normal;
+    font-size: 1rem;
+}
+.top-image-action a{
+    color: black;
+    font-size: .8rem;
+}
+.top-seller-image img{
+    max-width: 80%;
+    height: auto;
+}
+.top-seller-image{
+    margin: 2em 0;
+}
+.top-seller-image:hover{
+    border: 1px solid black;
+}
+.background-video {
+    position: relative;
+    width: 100%;
+    height: 25em;
+    overflow: hidden;
+    margin-bottom: 4em;
+}
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures video covers the entire container */
+    z-index: -1; /* Puts the video behind the content */
+}
+.content {
+    position: relative;
+    z-index: 1; /* Places the content in front of the video */
+    text-align: left;
+    color: black;
+    padding: 2em;
+    transform: translateY(10%);
+}
+.content-background{
+    background: #FFFFFF;
+    padding: 2em;
+}
+.content-background h2{
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+.content-background p{
+    font-size: .9rem;
+    margin: 1em 0;
+}
+
+.coming-card1{
+    background: url(/images/shoes.jpg);
+    width: 100%;
+    height: 25em;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+.coming-card2{
+    background: url(/images/bag.jpg);
+    width: 100%;
+    height: 25em;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+.coming-card3{
+    background: url(/images/offline\ store\ \(3\).jpg);
+    width: 100%;
+    height: 25em;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+.coming-card4{
+    background: url(/images/shopper.jpg);
+    width: 100%;
+    height: 25em;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+.coming-detail{
+    margin-bottom: 2em;
+    border-radius: .5em;
+}
+.coming-desc{
+    padding: 1em;
+    color: #FFFFFF;
+}
+.coming-desc h2{
+    font-size: 2rem;
+    font-weight: normal;
+}
+.coming-desc p{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: .5em 0;
+}
+
+.services{
+    text-align: center;
+    margin: 3em 0;
+}
+.sub-service{
+    margin-bottom: 3em;
+}
+.sub-service i{
+    font-size: 1.5rem;
+}
+
+.review-hero{
+    background: #191919;
+    height: 110vh;
+}
+.reviews{
+    color: #FFFFFF;
+}
+.review-details{
+    text-align: center;
+    margin-bottom: 2em;
+}
+.review-details h4{
+    font-weight: normal;
+    padding-top: 3em;
+}
+.review-details h2{
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+.review-details p{
+    font-size: .9rem;
+}
+.slider-wrapper{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.image-slider{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.image-slide{
+    flex: 0 0 100%;
+    text-align: center;
+}
+.image-slider img{
+    max-width: 50%;
+    height: 50%;
+    border: 2px solid black;
+}
+span a{
+    display: flex;
+    justify-content: left;
+    margin-top: .8em;
+    color: #FFFFFF;
+}
+#prevButton{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+#nextButton{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+.image-slide p{
+    font-size: .9rem;
+    text-align: left;
+}
+span i{
+    color: #ffa534;
+    margin: .5em 0;
+}
+
+.sponsors div{
+    margin-top: 2em;
+    text-align: center;
+}
+.sponsors h1{
+    font-size: 3.5rem;
+}
+.sponsors h2{
+    font-size: 2rem;
+}
+.sponsors h3{
+    font-size: 2.4rem;
+}
+.sponsors h4{
+    font-size: 1.9rem;
+}
+.sponsors h5{
+    font-size: 1.5rem;
+}
+
+.footer{
+    margin: 3em 0;
+}
+.footer .about h4{
+    font-size: 1.2rem;
+    margin: 1em 0;
+}
+.footer .about ul{
+    margin-bottom: 1em;
+    list-style: none;
+}
+.app img{
+    max-width: 30%;
+}
+form input, textarea{
+    display: block;
+    outline: none;
+    width: 85%;
+    padding: 1em; 
+}
+textarea{
+    resize: none;
+}
+
+.footer-end{
+    text-align: center;
+    margin-top: 2em;
+}
+.social i{
+    padding: 1em;
+    color: black;
+}
+.fa-facebook-f:hover{
+    background: #1877F2;
+    border-radius: .4em;
+    color: #FFFFFF;
+}
+.fa-x-twitter:hover{
+    background: #000000;
+    border-radius: .4em;
+    color: #FFFFFF;
+}
+.fa-instagram:hover{
+    background: #833AB4;
+    border-radius: .4em;
+    color: #FFFFFF;
+}
+.fa-tiktok:hover{
+    background: #E1306C;
+    border-radius: .4em;
+    color: #FFFFFF;
+}
+#scroll{
+    margin: 1em 0;
+}
+#scroll a{
+    color: black;
+}
+#scroll a:hover{
+    color: #FFFFFF;
+}
+
+/*Shop Section*/
+
+.shop img{
+    width: 100%;
+    height: auto;
+}
+.shop-details{
+    text-align: center;
+    background: #DDD0C8;
+    padding: 1em;
+    margin-top: 2em;
+}
+.shop-details:hover{
+    border: 1px solid black;
+}
+.shop-details a{
+    text-decoration: none;
+    color: black;
+}
+.shop-details a:hover{
+    text-decoration: underline;
+}
+
+/*Shop Section*/
+
+.hero-banner{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), transparent), url(/images/about\ banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+.hero-banner h2{
+    font-size: 3rem;
+    color: #FFFFFF;
+    transform: translateY(40vh);
+    text-align: center;
+}
+.about-us{
+    margin: 4em 0;
+    text-align: center;
+}
+.about-us h2{
+    font-weight: normal;
+    font-size: 2.3rem;
+    margin-bottom: .5em;
+}
+.about-page-banner img{
+    width: 100%;
+    height: auto;
+}
+.qualities{
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+}
+.qualities h2{
+    margin: .5em 0;
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+
+/*Contact Page*/
+
+.hr{
+    border: 1px solid black;
+    margin: 3em 0;
+}
+.contact-page h2{
+    font-weight: normal;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1em;
+}
+.contact-form{
+    margin-top: 2em;
+}
+
+/*Account Page*/
+
+.options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+    gap: 2.5em;
+    font-weight: bold;
+}
+.account-form{
+    display: grid;
+    place-items: center;
+}
+.account-page a{
+    text-decoration: none;
+    color: black;
+}
+.account-form input{
+    display: block;
+    margin: 1em 0;
+    padding: .5em 1em;
+    width: 100%;
+}
+.form-links a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .5em 0;
+}
+.open-nav{
+    transform: translateX(0%);
+}
+
+@media (min-width: 613px) {
+    .container{
+        padding: 0 2em;
+    }
+}
+@media (min-width: 768px) {
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    header{
+        padding: 1em 5em;
+    }
+    .nav-icon .menu{
+        display: none;
+    }
+    nav .close{
+        display: none;
+    }
+    nav{
+        transform: translate(0);
+        position: unset;
+        background: none;
+        height: auto;
+        width: auto;
+    }
+    nav ul{
+        display: flex;
+        align-items: center;
+        gap: 2em;
+    }
+    nav ul li a{
+        padding: unset;
+    }
+
+    nav ul li a:hover{
+        background: unset;
+    }
+
+    .desc{
+        padding-top: 2em;
+    }
+
+    .slider {
+        flex-direction: row;
+    }
+    
+    .slider img {
+        max-width: 100%;
+        height: auto;
+    }
+    .slide {
+        flex-basis: 30%;
+    }
+
+
+    .card-box{
+        display: grid;
+        gap: 2em;
+        grid-template-columns: auto auto;
+        grid-template-areas: 
+        "left right"
+        "left bottom";
+    }
+    .card1{
+        grid-area: left;
+        height: unset;
+    }
+    .card3{
+        margin-top: unset;
+    }
+
+
+    .top-display{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .top-seller-image{
+        flex-basis: 23%;
+    }
+    .top-seller-image img{
+        max-width: 100%;
+        height: 30em;
+        object-fit: cover;
+    }
+
+
+    .background-video{
+        height: 30em;
+    }
+    .content{
+        width: 35%;
+    }
+    .content-background h2{
+        font-size: 3.5rem;
+        font-weight: normal;
+    }
+    .content-background p{
+        font-size: 1rem;
+        margin: 1em 0;
+    }
+
+
+    .coming-soon{
+        display: flex;
+        align-items: center;
+        gap: 2em;
+    }
+
+
+    .services{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    
+    .image-slide{
+        display: flex;
+        align-items: center;
+        gap: 2em;
+        text-align: unset;
+        margin-top: 3em;
+    }
+    span{
+        flex-basis: 70%;
+    }
+
+    .image-slider img{
+        max-width: 20%;
+        height: unset;
+    }
+
+
+    .sponsors{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .footer{
+        display: flex;
+        align-items: first baseline;
+    }
+    .about{
+        flex-basis: 30%;
+    }
+
+    .footer-end{
+        text-align: unset;
+        display: flex;
+        justify-content: space-between;
+        margin: 2em 0;
+        align-items: center;
+    }
+
+    
+    /*Shop Section*/
+
+    .shop img{
+        width: 100%;
+        height: 20em;
+    }
+    .shop{
+        display: grid;
+        gap: 1em;
+        grid-template-columns: auto auto auto;
+        margin: 3em 0;
+    }
+    .shop-details{
+        margin-top: unset;
+    }
+
+
+    /*About Page*/
+
+    .about-us{
+        padding: 0 18em;
+    }
+    .about-page-banner{
+        display: grid;
+        align-items: center;
+        grid-template-columns: auto auto;
+        grid-template-areas: 
+        "left right";
+    }
+    .left{
+        grid-area: left;
+        
+    }
+
+
+    /*Contact Page*/
+
+    .contact-page, .contact-form{
+        padding: 0 15em;
+    }
+    .contact-page h2{
+        font-size: 4rem;
+    }
+
+}
