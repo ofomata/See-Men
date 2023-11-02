@@ -419,8 +419,8 @@ button:hover{
     text-align: center;
 }
 .image-slider img{
-    max-width: 50%;
-    height: 50%;
+    width: 50%;
+    height: auto;
     border: 2px solid black;
 }
 span a{
